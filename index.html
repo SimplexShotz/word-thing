@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>word thing lol</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+  </head>
+  <body>
+    <h1>Current:<br><div id="words">Waiting...</div></h1>
+    <textarea id="letter"></textarea>
+    <button id="send" onclick="send()">Send</button>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCvbkyc1JGvi7HawgtXJYdMVVO5dNH-WfE",
+        authDomain: "word-thing.firebaseapp.com",
+        databaseURL: "https://word-thing.firebaseio.com",
+        projectId: "word-thing",
+        storageBucket: "word-thing.appspot.com",
+        messagingSenderId: "880511243412"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+</html>
